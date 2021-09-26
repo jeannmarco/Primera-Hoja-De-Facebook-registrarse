@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="img/logoface.ico">
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook-jm</title>
+</head>
+<body>
+    <main class="bg padding-main">
+        <div class="contenedor pd-20 dos-columnas">
+            <div>
+
+                <div class="contenedor-logo">
+                    <img class="logo" src="img/facebooklo.svg" alt="logo de facebook">
+    
+                </div>
+                <h2 class="eslogan">Esta pagina de facebook jm esta hecha nadamas para pruebas, no utilizarse.</h2>
+    
+                 </div>
+                 <div>
+    <form class="card shadow">
+    
+        <input type="correo" placeholder="Correo electronico o numero telefonico">
+        <input type="contraseña" placeholder="Ingrese su contraseña">
+        <input type="submit" value="Entrar" class="btn-blue">
+        <a href="a" class="link">¿Has olvidado la contraseña?</a>
+        <div class="line"></div>
+        <a href="#" class="btn-green">Crear cuenta nueva</a>
+    
+    </form>
+    <p class="info"><a href="#" class="bold">Crea una pagina</a> para tu negocio, personaje publico o grupo musical.</p>
+    
+                 </div>
+    
+        </div>
+  
+
+
+
+    </main>
+    <footer class="contenedor">
+        <ul class="links">
+
+            <li><a href="a">ingles</a></li>
+            <li><a href="a">español</a></li>
+            <li><a href="a">portugues</a></li>
+            <li><a href="a">frances</a></li>
+            <li><a href="a">italiano</a></li>
+            <li><a href="a">chino</a></li>
+            <li><a href="a">japones</a></li>
+            <li><a href="a">castellano</a></li>
+            <li><a href="a">aleman</a></li>
+            <li><a href="a">arabe</a></li>
+        </ul>
+        <div class="line-fo"></div>
+        <ul class="links">
+            <li><a href="a"></a>Juegos</li>
+            <li><a href="a"></a>Lives</li>
+            <li><a href="a"></a>Marketplace</li>
+            <li><a href="a"></a>Empleo</li>
+            <li><a href="a"></a>Ayuda</li>
+           
+    
+        
+
+
+
+        </ul>
+        <p class="copy">Facebookjm  ©  2021</p>
+
+
+
+    </footer>
+    
+</body>
+</html>
+-----------(TODO ESTO DEBE IR EN UNA CARPETA LLAMADA INDEX.HTML)(DEBERAS DESCARGAR LOS LOGOS DE FACEBOOK DESDE EL NAVEGADOR)--------
+--------                                                              -------------------
+        (LO SIGUIENTE LO DEBERAS HACER UNA CARPETA LLAMADA STYLE.CSS)
+        :root{
+    --colorBlue: #1877f2;
+    --colorGreen:#42b72a ;
+    --colorMain: #f0f2f5;
+    --colorWhite: #ffffff;
+    --colorText:#282a2d;
+    --colorline:#e7e9ec;
+    --colorLinks:#4b67a1;
+    --colorBorder:#dddfe2;
+    --colorPlaceholder:#949496;
+    --colorCopy:#848484;
+
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  body{
+      font-size: 16px;
+      font-family: Arial, Helvetica, sans-serif;
+
+
+  }
+
+  h1, h2{
+margin: 0;
+ }
+ a{
+     text-decoration: none;
+ }
+ ul{
+  
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+ }
+ .padding-main{
+     padding: 72px 0 112px 0;
+ }
+ .bg{
+     background-color: var(--colorMain);
+ }
+ .bold{
+     font-weight: bold;
+     color: var(--colorText);
+ }
+ .bold:hover{
+     text-decoration: underline;
+ }
+ .contenedor{
+     width: 98rem;
+     margin: 0 auto;
+ }
+ .pd-20{
+     padding: 2rem 0;
+ }
+ .dos-columnas{
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     column-gap: 3.2rem;
+ }
+ .contenedor-logo{
+     width: 548px;
+     height: 182.05px;
+     padding: 112px 0 16px 0;
+
+ }
+ .logo{
+
+    width: 301.067px;
+    height: 106;
+    margin: -28px;
+
+ }
+ .eslogan{
+     width: 50rem;
+     padding-bottom: 20px;
+     font-size: 28px;
+     line-height: 3.2rem;
+     color: var(--colorText);
+ }
+ .shadow{
+     box-shadow: 0px 5px 7px #cccccc;
+    
+ }
+
+ .card{
+     width: 396px;
+     height: 349.817px;
+     background-color: var(--colorWhite);
+     border-radius: 8px;
+     text-align: center;
+     padding: 10px 0 24px 0;
+     margin-top: 4rem;
+
+ }
+ .card input[type="correo"], input[type="contraseña"]{
+     display: inline-block;
+     width: 364px;
+     height: 52px;
+     padding: 14px 16px;
+     margin: 6px 0;
+     border-radius: 6px;
+     outline: none;
+     border: 1px solid var(--colorBorder);
+ }
+.card input[type="correo"]::placeholder, input[type="contraseña"]::placeholder{
+    color: var(--colorPlaceholder);
+    font-size: 1.7rem;
+}
+.card input[type="correo"]:focus, input[type="contraseña"]:focus{
+    border: 1px solid var(--colorBlue);
+    box-shadow: 0px 0px 1px var(--colorBlue);
+}
+.card input[type="submit"]:focus{
+    border:1px solid var(--colorBlue);
+    box-shadow:0px 0px 3px var(--colorBlue);
+
+}
+
+.btn-blue{
+    width: 364px;
+    height: 48px;
+    border-radius: 6px;
+    border: none;
+    margin: 1rem 0 1.6rem 0;
+    padding: 0px 16px;
+    background-color: var(--colorBlue);
+    font-size: 2rem;
+    color: var(--colorWhite);
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.btn-blue:hover{
+    background-color: #1c73e4;
+}
+.link{
+    color: var(--colorBlue);
+    font-size: 1.4rem;
+
+}
+.link:hover{
+    text-decoration: underline;
+}
+.line{
+    height: 1px;
+    border-top: 1px solid var(--colorline);
+    margin: 2rem 1.6rem 2.6rem 1.6rem;
+}
+.btn.green{
+    display: inline-block;
+    width: 189.75px;
+    height: 48px;
+    padding: 15px 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 17px;
+    background-color: var(--colorGreen);
+    color: var(--colorWhite);
+}
+.btn-green:hover{
+    background-color: #3ca826;
+}
+.info{
+    grid-column: 2/3;
+    font-size: 1.4rem;
+    text-align: center;
+    color: var(--colorText);
+    margin: 2.8rem 0 0 0;
+    line-height: 2rem;
+}
+.links{
+    padding-top: 8px;
+
+}
+.links a{
+    color: var(--colorLinks);
+    font-size: 1.2rem;
+
+}
+.links a:hover{
+    text-decoration: underline;
+}
+.links li{
+    display: inline-block;
+    padding-right: 1.5rem;
+}
+.line-fo{
+    height: 1px;
+    border-top: 1px solid var(--colorline);
+    margin: 8px 0 0 0;
+}
+.copy{
+    margin: 2.5rem 0;
+    font-size: 1.1rem;
+    color: var(--colorCopy);
+}
